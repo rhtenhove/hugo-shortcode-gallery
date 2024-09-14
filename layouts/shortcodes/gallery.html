@@ -213,7 +213,8 @@ Ordinal: {{ .Ordinal}}
 </div>
 </div>
 
-<script defer>
+<script>
+	window.addEventListener('DOMContentLoaded', function() {
 	if (!("HSCGjQuery" in window)) {
 		if (!window.jQuery) {
 			throw new Error("jQuery is not loaded, hugo-shortcode-gallery wont work without it!");
@@ -445,4 +446,5 @@ Ordinal: {{ .Ordinal}}
 	// We call it with the one version of jQuery that was used to load our plugins.
 	// See: http://blog.nemikor.com/2009/10/03/using-multiple-versions-of-jquery/
 	})(window.HSCGjQuery)
+});
 </script>
